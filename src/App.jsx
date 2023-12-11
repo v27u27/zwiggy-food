@@ -1,13 +1,13 @@
-import './App.css'
-import zwiggyLogo from '/png-zwiggy-logo.png'
 import Header from "./components/Header.jsx";
+import Body from "./components/Body.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () =>  {
-    return (
-        <Header/>
-        // <Body/>
-        // <Footer/>
-    );
+    return <div>
+        <Header />
+        <Body />
+        {/*<Footer />*/}
+    </div>
 }
 
 export default App
