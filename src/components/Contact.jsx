@@ -1,6 +1,4 @@
-const Contact = ()=> {
-    return <div>
-        Contact Page
-    </div>
-}
+const Contact = () => {
+  return <div className="flex-1">Contact Page</div>;
+};
 export default Contact;
