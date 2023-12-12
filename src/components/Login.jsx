@@ -30,17 +30,17 @@ const Login = () => {
   };
 
   return (
-    <div className="flex-1 flex justify-center items-start mt-16 w-full">
+    <div className="mt-16 flex w-full flex-1 items-start justify-center">
       <form
         onSubmit={loginHandle}
-        className="bg-gray-100 p-6 rounded shadow-md"
+        className="rounded bg-gray-100 p-6 shadow-md"
       >
         <div className="flex justify-around">
-          <h2 className="text-3xl font-semibold mb-4">Login</h2>
+          <h2 className="mb-4 text-3xl font-semibold">Login</h2>
         </div>
         <div className="mb-4">
           <input
-            className="border rounded px-3 py-2 w-full mb-4"
+            className="mb-4 w-full rounded border px-3 py-2"
             type="text"
             id="name"
             placeholder="Enter Name Here"
@@ -49,7 +49,7 @@ const Login = () => {
             required
           />
           <input
-            className="border rounded px-3 py-2 w-full"
+            className="w-full rounded border px-3 py-2"
             type="email"
             id="email"
             placeholder="Enter Email Here"
@@ -60,7 +60,7 @@ const Login = () => {
         </div>
         <div className="mb-6">
           <input
-            className="border rounded px-3 py-2 w-full"
+            className="w-full rounded border px-3 py-2"
             type="password"
             id="password"
             placeholder="Enter Password Here"
@@ -71,7 +71,7 @@ const Login = () => {
         </div>
         <div className="flex justify-around">
           <button
-            className="bg-blue-500 w-72 text-white font-bold py-2 px-4 rounded hover:bg-blue-600"
+            className="w-72 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-600"
             type="submit"
           >
             Login

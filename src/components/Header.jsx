@@ -9,7 +9,7 @@ const Header = () => {
     setUserName(null);
   };
   return (
-    <div className="bg-white shadow-lg p-2 shadow-gray-300 drop-shadow-sm">
+    <div className="bg-white p-2 shadow-lg shadow-gray-300 drop-shadow-sm">
       <header className="mx-full">
         <div className="mx-auto flex items-center justify-between w-[92%]">
           <Link to={"/"}>
@@ -17,7 +17,7 @@ const Header = () => {
           </Link>
           <ul className="mr-2 flex p-4">
             {loggedInUser ? (
-              <li className="px-2 font-medium">
+              <li className="mr-1 rounded-md bg-cyan-200 px-2 py-2 font-medium">
                 {" "}
                 Welcome, {" " + loggedInUser}{" "}
               </li>
@@ -25,22 +25,29 @@ const Header = () => {
               ""
             )}
             <Link to={"/"}>
-              <li className="px-2 font-medium">Home</li>
+              <li className="rounded-md px-2 py-2 font-medium hover:bg-gray-200">
+                Home
+              </li>
             </Link>
             <Link to={"/cart"}>
-              <li className="flex px-2 font-medium"> Cart (0)</li>
+              <li className="flex rounded-md px-2 py-2 font-medium hover:bg-gray-200">
+                {" "}
+                Cart (0)
+              </li>
             </Link>
             <div>
               {loggedInUser ? (
                 <li
                   onClick={handleLogout}
-                  className="cursor-pointer px-2 font-medium"
+                  className="cursor-pointer rounded-md px-2 py-2 font-medium hover:bg-red-200"
                 >
                   Logout
                 </li>
               ) : (
                 <Link to={"/login"}>
-                  <li className="cursor-pointer px-2 font-medium">Login</li>
+                  <li className="cursor-pointer rounded-md px-2 py-2 font-medium hover:bg-blue-300">
+                    Login
+                  </li>
                 </Link>
               )}
             </div>
