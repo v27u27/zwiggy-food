@@ -1,27 +1,26 @@
 export const restaurantListFetchApiUrl =
-  "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.3176452&lng=82.9739144";
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.548202&lng=77.2380163";
 export const restaurantMenuFetchApiUrl =
-  "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=25.3176452&lng=82.9739144&restaurantId=";
+  "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.548202&lng=77.2380163&restaurantId=";
 export const restaurantImageCDNUrl =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 export const defaultData = [
   {
     info: {
-      id: "538975",
-      name: "7th Heaven",
-      cloudinaryImageId: "f4fyvaxlkonjz1har66b",
-      locality: "Jawahar Nagar Colony",
-      areaName: "Bhelupur",
-      costForTwo: "₹300 for two",
-      cuisines: ["Bakery", "Desserts", "Pizzas"],
-      avgRating: 4.2,
-      veg: true,
+      id: "622044",
+      name: "MOJO Pizza - 2X Toppings",
+      cloudinaryImageId: "59b64f9bb67234987652437f21d379c2",
+      locality: "Malviya Nagar",
+      areaName: "Begumpur",
+      costForTwo: "₹250 for two",
+      cuisines: ["Pizzas", "Italian", "Fast Food", "Desserts"],
+      avgRating: 4.5,
       feeDetails: {
-        restaurantId: "538975",
+        restaurantId: "622044",
         fees: [
           {
             name: "BASE_DISTANCE",
-            fee: 2300,
+            fee: 5100,
           },
           {
             name: "BASE_TIME",
@@ -30,301 +29,50 @@ export const defaultData = [
             name: "ANCILLARY_SURGE_FEE",
           },
         ],
-        totalFee: 2300,
+        totalFee: 5100,
       },
-      parentId: "19",
-      avgRatingString: "4.2",
-      totalRatingsString: "500+",
+      parentId: "11329",
+      avgRatingString: "4.5",
+      totalRatingsString: "100+",
       sla: {
         deliveryTime: 24,
-        lastMileTravel: 2.1,
+        lastMileTravel: 3,
         serviceability: "SERVICEABLE",
-        slaString: "24 mins",
-        lastMileTravelString: "2.1 km",
+        slaString: "19-29 mins",
+        lastMileTravelString: "3.0 km",
         iconType: "ICON_TYPE_EMPTY",
       },
       availability: {
-        nextCloseTime: "2023-12-12 22:30:00",
+        nextCloseTime: "2023-12-13 02:00:00",
         opened: true,
       },
       badges: {
-        imageBadges: [
+        textExtendedBadges: [
           {
-            imageId: "v1695133679/badges/Pure_Veg111.png",
-            description: "pureveg",
+            iconId: "guiltfree/GF_Logo_android_3x",
+            shortDescription: "options available",
+            fontColor: "#7E808C",
           },
         ],
       },
       isOpen: true,
-      aggregatedDiscountInfoV2: {},
       type: "F",
       badgesV2: {
         entityBadges: {
-          imageBased: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {
             badgeObject: [
               {
                 attributes: {
-                  description: "pureveg",
-                  imageId: "v1695133679/badges/Pure_Veg111.png",
+                  description: "",
+                  fontColor: "#7E808C",
+                  iconId: "guiltfree/GF_Logo_android_3x",
+                  shortDescription: "options available",
                 },
               },
             ],
           },
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      orderabilityCommunication: {
-        title: {},
-        subTitle: {},
-        message: {},
-        customIcon: {},
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {
-      context: "seo-data-cec39584-1fee-4460-87c3-923c19e02614",
-    },
-    cta: {
-      link: "https://www.swiggy.com/restaurants/7th-heaven-jawahar-nagar-colony-bhelupur-varanasi-538975",
-      text: "RESTAURANT_MENU",
-      type: "WEBLINK",
-    },
-    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
-  },
-  {
-    info: {
-      id: "77035",
-      name: "Singh's Delight Restaurant(Sunderpur)",
-      cloudinaryImageId: "htbhe86ehhpvuy47df1w",
-      locality: "Sunderpur",
-      areaName: "Sunderpur",
-      costForTwo: "₹350 for two",
-      cuisines: ["North Indian", "Biryani", "Mughlai", "Chinese"],
-      avgRating: 4,
-      feeDetails: {
-        restaurantId: "77035",
-        fees: [
-          {
-            name: "BASE_DISTANCE",
-            fee: 1800,
-          },
-          {
-            name: "BASE_TIME",
-          },
-          {
-            name: "ANCILLARY_SURGE_FEE",
-          },
-        ],
-        totalFee: 1800,
-      },
-      parentId: "408359",
-      avgRatingString: "4.0",
-      totalRatingsString: "10K+",
-      sla: {
-        deliveryTime: 32,
-        lastMileTravel: 2.2,
-        serviceability: "SERVICEABLE",
-        slaString: "32 mins",
-        lastMileTravelString: "2.2 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-12 23:15:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "₹125 OFF",
-        subHeader: "ABOVE ₹199",
-        discountTag: "FLAT DEAL",
-      },
-      orderabilityCommunication: {
-        title: {},
-        subTitle: {},
-        message: {},
-        customIcon: {},
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {
-      context: "seo-data-cec39584-1fee-4460-87c3-923c19e02614",
-    },
-    cta: {
-      link: "https://www.swiggy.com/restaurants/singhs-delight-restaurant-sunderpur-sunderpur-varanasi-77035",
-      text: "RESTAURANT_MENU",
-      type: "WEBLINK",
-    },
-    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
-  },
-  {
-    info: {
-      id: "77114",
-      name: "Roma's Cafe Diner",
-      cloudinaryImageId: "kxoej3ztgnbdxgxtewyu",
-      locality: "Assi Road",
-      areaName: "Lanka",
-      costForTwo: "₹700 for two",
-      cuisines: [
-        "North Indian",
-        "Chinese",
-        "Continental",
-        "Italian",
-        "Mexican",
-      ],
-      avgRating: 4.3,
-      feeDetails: {
-        restaurantId: "77114",
-        fees: [
-          {
-            name: "BASE_DISTANCE",
-            fee: 2500,
-          },
-          {
-            name: "BASE_TIME",
-          },
-          {
-            name: "ANCILLARY_SURGE_FEE",
-          },
-        ],
-        totalFee: 2500,
-      },
-      parentId: "171271",
-      avgRatingString: "4.3",
-      totalRatingsString: "10K+",
-      sla: {
-        deliveryTime: 28,
-        lastMileTravel: 0.8,
-        serviceability: "SERVICEABLE",
-        slaString: "28 mins",
-        lastMileTravelString: "0.8 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-12 23:00:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
-        },
-      },
-      aggregatedDiscountInfoV3: {
-        header: "₹100 OFF",
-        subHeader: "ABOVE ₹249",
-        discountTag: "FLAT DEAL",
-      },
-      orderabilityCommunication: {
-        title: {},
-        subTitle: {},
-        message: {},
-        customIcon: {},
-      },
-      differentiatedUi: {
-        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        differentiatedUiMediaDetails: {
-          mediaType: "ADS_MEDIA_ENUM_IMAGE",
-          lottie: {},
-          video: {},
-        },
-      },
-      reviewsSummary: {},
-      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      restaurantOfferPresentationInfo: {},
-    },
-    analytics: {
-      context: "seo-data-cec39584-1fee-4460-87c3-923c19e02614",
-    },
-    cta: {
-      link: "https://www.swiggy.com/restaurants/romas-cafe-diner-assi-road-lanka-varanasi-77114",
-      text: "RESTAURANT_MENU",
-      type: "WEBLINK",
-    },
-    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
-  },
-  {
-    info: {
-      id: "77082",
-      name: "Maharaja Foods - Lanka",
-      cloudinaryImageId: "f7xoyohj8soafjcg7grn",
-      locality: "Lal Bihari Market",
-      areaName: "Lanka",
-      costForTwo: "₹200 for two",
-      cuisines: ["Snacks", "Chinese", "North Indian", "Biryani"],
-      avgRating: 3.8,
-      feeDetails: {
-        restaurantId: "77082",
-        fees: [
-          {
-            name: "BASE_DISTANCE",
-            fee: 1800,
-          },
-          {
-            name: "BASE_TIME",
-          },
-          {
-            name: "ANCILLARY_SURGE_FEE",
-          },
-        ],
-        totalFee: 1800,
-      },
-      parentId: "129875",
-      avgRatingString: "3.8",
-      totalRatingsString: "10K+",
-      sla: {
-        deliveryTime: 22,
-        lastMileTravel: 1,
-        serviceability: "SERVICEABLE",
-        slaString: "22 mins",
-        lastMileTravelString: "1.0 km",
-        iconType: "ICON_TYPE_EMPTY",
-      },
-      availability: {
-        nextCloseTime: "2023-12-12 22:55:00",
-        opened: true,
-      },
-      badges: {},
-      isOpen: true,
-      type: "F",
-      badgesV2: {
-        entityBadges: {
-          imageBased: {},
-          textBased: {},
-          textExtendedBadges: {},
         },
       },
       aggregatedDiscountInfoV3: {
@@ -350,32 +98,32 @@ export const defaultData = [
       restaurantOfferPresentationInfo: {},
     },
     analytics: {
-      context: "seo-data-cec39584-1fee-4460-87c3-923c19e02614",
+      context: "seo-data-440c8640-842d-46e8-a0ee-7ce84d65a468",
     },
     cta: {
-      link: "https://www.swiggy.com/restaurants/maharaja-foods-lanka-lal-bihari-market-lanka-varanasi-77082",
+      link: "https://www.swiggy.com/restaurants/mojo-pizza-2x-toppings-malviya-nagar-begumpur-delhi-622044",
       text: "RESTAURANT_MENU",
       type: "WEBLINK",
     },
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
+
   {
     info: {
-      id: "88160",
-      name: "Capsicum",
-      cloudinaryImageId: "naxbhqlxzu97mkbnofdf",
-      locality: "Saket Nagar Colony",
-      areaName: "Lanka",
-      costForTwo: "₹250 for two",
-      cuisines: ["Indian", "North Indian"],
-      avgRating: 4.1,
-      veg: true,
+      id: "681857",
+      name: "Louis Burger",
+      cloudinaryImageId: "a3535141ce7f8db939e999c2a7e06a0c",
+      locality: "School Block",
+      areaName: "Shakarpur",
+      costForTwo: "₹600 for two",
+      cuisines: ["Burgers", "American", "Fast Food"],
+      avgRating: 4.2,
       feeDetails: {
-        restaurantId: "88160",
+        restaurantId: "681857",
         fees: [
           {
             name: "BASE_DISTANCE",
-            fee: 1800,
+            fee: 5800,
           },
           {
             name: "BASE_TIME",
@@ -384,28 +132,28 @@ export const defaultData = [
             name: "ANCILLARY_SURGE_FEE",
           },
         ],
-        totalFee: 1800,
+        totalFee: 5800,
       },
-      parentId: "55813",
-      avgRatingString: "4.1",
-      totalRatingsString: "10K+",
+      parentId: "22485",
+      avgRatingString: "4.2",
+      totalRatingsString: "100+",
       sla: {
-        deliveryTime: 21,
-        lastMileTravel: 1.1,
+        deliveryTime: 32,
+        lastMileTravel: 4.7,
         serviceability: "SERVICEABLE",
-        slaString: "21 mins",
-        lastMileTravelString: "1.1 km",
+        slaString: "32 mins",
+        lastMileTravelString: "4.7 km",
         iconType: "ICON_TYPE_EMPTY",
       },
       availability: {
-        nextCloseTime: "2023-12-12 23:00:00",
+        nextCloseTime: "2023-12-13 04:00:00",
         opened: true,
       },
       badges: {
         imageBadges: [
           {
-            imageId: "v1695133679/badges/Pure_Veg111.png",
-            description: "pureveg",
+            imageId: "v1669879258/GFF_logo_new_xbycg6.png",
+            description: "gourmet",
           },
         ],
       },
@@ -417,8 +165,8 @@ export const defaultData = [
             badgeObject: [
               {
                 attributes: {
-                  description: "pureveg",
-                  imageId: "v1695133679/badges/Pure_Veg111.png",
+                  description: "gourmet",
+                  imageId: "v1669879258/GFF_logo_new_xbycg6.png",
                 },
               },
             ],
@@ -428,7 +176,7 @@ export const defaultData = [
         },
       },
       aggregatedDiscountInfoV3: {
-        header: "₹100 OFF",
+        header: "₹125 OFF",
         subHeader: "ABOVE ₹249",
         discountTag: "FLAT DEAL",
       },
@@ -451,10 +199,113 @@ export const defaultData = [
       restaurantOfferPresentationInfo: {},
     },
     analytics: {
-      context: "seo-data-cec39584-1fee-4460-87c3-923c19e02614",
+      context: "seo-data-a71dcb94-deb0-461e-8879-835c06ba59e5",
     },
     cta: {
-      link: "https://www.swiggy.com/restaurants/capsicum-saket-nagar-colony-lanka-varanasi-88160",
+      link: "https://www.swiggy.com/restaurants/louis-burger-school-block-shakarpur-delhi-681857",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+
+  {
+    info: {
+      id: "336053",
+      name: "Wendy's Burgers",
+      cloudinaryImageId: "a2ec5418246b622ec4baa3bd051ef6ab",
+      locality: "Sector 8",
+      areaName: "Pushpanjali",
+      costForTwo: "₹200 for two",
+      cuisines: ["Burgers", "American", "Fast Food", "Snacks", "Beverages"],
+      avgRating: 4.2,
+      feeDetails: {
+        restaurantId: "336053",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 5100,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 5100,
+      },
+      parentId: "972",
+      avgRatingString: "4.2",
+      totalRatingsString: "5K+",
+      sla: {
+        deliveryTime: 27,
+        lastMileTravel: 3,
+        serviceability: "SERVICEABLE",
+        slaString: "27 mins",
+        lastMileTravelString: "3.0 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-12-12 23:59:00",
+        opened: true,
+      },
+      badges: {
+        textExtendedBadges: [
+          {
+            iconId: "guiltfree/GF_Logo_android_3x",
+            shortDescription: "options available",
+            fontColor: "#7E808C",
+          },
+        ],
+      },
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {
+            badgeObject: [
+              {
+                attributes: {
+                  description: "",
+                  fontColor: "#7E808C",
+                  iconId: "guiltfree/GF_Logo_android_3x",
+                  shortDescription: "options available",
+                },
+              },
+            ],
+          },
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "ITEMS",
+        subHeader: "AT ₹129",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
+    },
+    analytics: {
+      context: "seo-data-38920db1-1e99-4ff4-8281-4fd3030754e3",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/wendys-burgers-sector-8-pushpanjali-delhi-336053",
       text: "RESTAURANT_MENU",
       type: "WEBLINK",
     },

@@ -32,7 +32,7 @@ const Body = () => {
       setFilterResList(resList);
       setFilterFlag(false);
     } else {
-      setFilterResList(resList.filter((res) => res?.info?.avgRating > 4));
+      setFilterResList(resList.filter((res) => res?.info?.avgRating > 4.2));
       setFilterFlag(true);
     }
   };

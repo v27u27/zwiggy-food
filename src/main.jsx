@@ -4,11 +4,10 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage.jsx";
-import Contact from "./components/Contact.jsx";
-import About from "./components/About.jsx";
 import Cart from "./components/Cart.jsx";
 import RestaurantPage from "./components/RestaurantPage.jsx";
 import Body from "./components/Body.jsx";
+import Login from "./components/Login.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,16 +24,12 @@ const router = createBrowserRouter([
         element: <Body />,
       },
       {
+        path: "/login",
+        element: <Login />,
+      },
+      {
         path: "/restaurant/:resId",
         element: <RestaurantPage />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/about",
-        element: <About />,
       },
       {
         path: "/cart",
