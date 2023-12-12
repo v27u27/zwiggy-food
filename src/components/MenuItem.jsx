@@ -4,7 +4,7 @@ import zwiggyLogo from "/png-zwiggy-logo.png";
 const MenuItem = ({ item }) => {
   return (
     <div>
-      <div className="flex grid grid-cols-9 justify-between rounded-b-sm border-b-2 p-4">
+      <div className="flex grid  hover:bg-gray-200 grid-cols-9 justify-between rounded-b-sm border-b-2 p-4">
         <div className="col-span-6 p-2 font-medium">
           <div className="start-0">{item?.name}</div>
           <div>
