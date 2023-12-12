@@ -54,7 +54,7 @@ const Body = () => {
             <input
               type="text"
               value={searchText}
-              placeholder="Type Here to Search"
+              placeholder="Search you favourite restaurant name"
               onChange={(e) => {
                 setSearchText(e.target.value);
                 setFilterResList(

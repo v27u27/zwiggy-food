@@ -1,4 +1,5 @@
 import { restaurantImageCDNUrl } from "../utils/constants.js";
+import zwiggyLogo from "/png-zwiggy-logo.png";
 
 const MenuItem = ({ item }) => {
   return (
@@ -15,9 +16,11 @@ const MenuItem = ({ item }) => {
         <div className="relative col-span-3 m-auto flex h-36 w-48 items-center justify-center overflow-hidden rounded-lg">
           <img
             className="h-auto w-full object-cover object-center"
-            src={restaurantImageCDNUrl + item?.imageId}
+            src={
+              item?.imageId ? restaurantImageCDNUrl + item?.imageId : zwiggyLogo
+            }
           />
-          <button className="absolute bottom-0 border-2 border-green-600 bg-white px-8 py-2 text-green-600 hover:bg-gray-100">
+          <button className="absolute bottom-0 border-2 border-green-600 bg-white px-6 py-2 text-green-600 hover:bg-gray-100">
             ADD&nbsp;&nbsp;+
           </button>
         </div>

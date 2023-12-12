@@ -17,7 +17,7 @@ const RestaurantItems = ({ showIndex, setShowIndex, menuItemCards, index }) => {
       <div className="col-span-8 w-full">
         <div
           onClick={handleAccordionClick}
-          className="flex cursor-pointer justify-between rounded-md border-b-2 bg-gray-50 p-4 shadow-lg"
+          className="flex cursor-pointer justify-between rounded-md border-b-2 bg-gray-50 p-4 shadow-lg hover:bg-gray-200"
         >
           <div className="font-bold text-md">
             {title} ({itemCards.length})

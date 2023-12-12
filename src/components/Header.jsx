@@ -11,19 +11,19 @@ const Header = () => {
           </Link>
           <ul className="mr-2 flex p-4">
             <Link to={"/"}>
-              <li className="px-2 text-lg font-bold">Home</li>
+              <li className="px-2 font-medium">Home</li>
             </Link>
             <Link to={"/about"}>
-              <li className="px-2 text-lg font-bold">About</li>
+              <li className="px-2 font-medium">About</li>
             </Link>
             <Link to={"/contact"}>
-              <li className="px-2 text-lg font-bold">Contact</li>
+              <li className="px-2 font-medium">Contact</li>
             </Link>
             <Link to={"/cart"}>
-              <li className="px-2 text-lg font-bold">Cart</li>
+              <li className="flex px-2 font-medium"> Cart (0)</li>
             </Link>
-            <li className="cursor-pointer px-2 text-lg font-bold">Login</li>
-            <li className="cursor-pointer px-2 text-lg font-bold">online</li>
+            <li className="cursor-pointer px-2 font-medium">Login</li>
+            <li className="cursor-pointer px-1 font-medium">🟢 | 🔴</li>
           </ul>
         </div>
       </header>
