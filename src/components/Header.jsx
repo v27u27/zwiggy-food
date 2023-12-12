@@ -2,9 +2,11 @@ import logo from "/png-zwiggy-logo.png";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../utils/UserContext.js";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const { loggedInUser, setUserName } = useContext(UserContext);
+  const cartItems = useSelector((store) => store.cart.items);
   const handleLogout = () => {
     setUserName(null);
   };
@@ -32,7 +34,7 @@ const Header = () => {
             <Link to={"/cart"}>
               <li className="flex rounded-md px-2 py-2 font-medium hover:bg-gray-200">
                 {" "}
-                Cart (0)
+                Cart ({cartItems.length})
               </li>
             </Link>
             <div>

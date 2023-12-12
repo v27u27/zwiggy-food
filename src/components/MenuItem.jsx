@@ -1,10 +1,16 @@
 import { restaurantImageCDNUrl } from "../utils/constants.js";
 import zwiggyLogo from "/png-zwiggy-logo.png";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../utils/cartSlice.js";
 
 const MenuItem = ({ item }) => {
+  const dispatch = useDispatch();
+  const handleAddToCart = () => {
+    dispatch(addToCart(item));
+  };
   return (
     <div>
-      <div className="flex grid  hover:bg-gray-200 grid-cols-9 justify-between rounded-b-sm border-b-2 p-4">
+      <div className="flex grid grid-cols-9 justify-between rounded-b-sm border-b-2 p-4 hover:bg-gray-200">
         <div className="col-span-6 p-2 font-medium">
           <div className="start-0">{item?.name}</div>
           <div>
@@ -20,7 +26,11 @@ const MenuItem = ({ item }) => {
               item?.imageId ? restaurantImageCDNUrl + item?.imageId : zwiggyLogo
             }
           />
-          <button className="absolute bottom-0 border-2 border-green-600 bg-white px-6 py-2 text-green-600 hover:bg-gray-100">
+          <button
+            onClick={handleAddToCart}
+            className="absolute bottom-0 border-2 border-green-600 bg-white px-6 py-2 text-green-600 hover:bg-gray-100
+            transition duration-300 ease-in-out transform hover:scale-105 active:bg-gray-700 active:scale-95"
+          >
             ADD&nbsp;&nbsp;+
           </button>
         </div>

@@ -22,7 +22,7 @@ const RestaurantItems = ({ showIndex, setShowIndex, menuItemCards, index }) => {
           <div className="font-bold text-md">
             {title} ({itemCards.length})
           </div>
-          <div>⌄</div>
+          <div>⌄</div>`
         </div>
         <div className="px-1">
           <div className="rounded-b-lg bg-gray-100">
