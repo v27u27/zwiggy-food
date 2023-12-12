@@ -12,7 +12,7 @@ const ErrorPage = () => {
           Sorry, an unexpected error has occurred.
         </p>
         <p className="m-4 text-center text-2xl">
-          {error.status} - {error.statusText || error.error.message}
+          {error?.status} {error?.statusText || error?.error?.message}
         </p>
       </div>
     </div>

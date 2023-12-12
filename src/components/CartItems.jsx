@@ -1,7 +1,13 @@
 import { restaurantImageCDNUrl } from "../utils/constants.js";
 import zwiggyLogo from "/png-zwiggy-logo.png";
+import { useDispatch } from "react-redux";
+import { deleteFromCart } from "../utils/cartSlice.js";
 
 const CartItems = ({ item }) => {
+  const dispatcher = useDispatch();
+  const handleItemRemove = () => {
+    dispatcher(deleteFromCart(item));
+  };
   return (
     <div>
       <div className="mb-2 rounded-md bg-gray-50 p-2 shadow-md hover:bg-gray-200">
@@ -21,11 +27,14 @@ const CartItems = ({ item }) => {
               <h2 className="text-lg font-semibold">{item?.name}</h2>
               <p className="text-gray-500">
                 {"₹"}
-                {item.price ? item.price / 100 : item.defaultPrice / 100}
+                {item?.price ? item?.price / 100 : item?.defaultPrice / 100}
               </p>
             </div>
           </div>
-          <button className="text-red-500 hover:text-red-700 focus:outline-none">
+          <button
+            onClick={handleItemRemove}
+            className="text-red-500 hover:text-red-700 focus:outline-none"
+          >
             Remove
           </button>
         </div>
