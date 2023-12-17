@@ -1,7 +1,7 @@
 export const restaurantListFetchApiUrl =
-  "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.548202&lng=77.2380163";
+  "https://kind-puce-bull-tie.cyclic.app/api/proxy/swiggy/dapi/restaurants/list/v5?lat=28.548202&lng=77.2380163";
 export const restaurantMenuFetchApiUrl =
-  "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.548202&lng=77.2380163&restaurantId=";
+  "https://kind-puce-bull-tie.cyclic.app/api/proxy/swiggy/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.548202&lng=77.2380163&restaurantId=";
 export const restaurantImageCDNUrl =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 export const defaultData = [
