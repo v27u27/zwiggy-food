@@ -10,9 +10,9 @@ const Body = () => {
   const [filterFlag, setFilterFlag] = useState(false);
 
   useEffect(() => {
-    setResList(defaultData);
-    setFilterResList(defaultData);
-    // fetchResData();
+    // setResList(defaultData);
+    // setFilterResList(defaultData);
+    fetchResData();
   }, []);
   const fetchResData = async () => {
     const resData = await fetch(restaurantListFetchApiUrl);
@@ -20,10 +20,12 @@ const Body = () => {
     const resArray =
       jsonData?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants;
-    const resArrayConcated =
-      resArray.length === 0 ? resArray : resArray.concat(defaultData);
-    setResList(resArrayConcated);
-    setFilterResList(resArrayConcated);
+    setResList(resArray);
+    setFilterResList(resArray);
+    // const resArrayConcated =
+    //   resArray.length === 0 ? resArray : resArray.concat(defaultData);
+    // setResList(resArrayConcated);
+    // setFilterResList(resArrayConcated);
     // console.log(resArray)
   };
 
