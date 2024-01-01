@@ -10,9 +10,9 @@ const Body = () => {
   const [filterFlag, setFilterFlag] = useState(false);
 
   useEffect(() => {
-    setResList(defaultData);
-    setFilterResList(defaultData);
-    // fetchResData();
+    // setResList(defaultData);
+    // setFilterResList(defaultData);
+    fetchResData();
   }, []);
   const fetchResData = async () => {
     const resData = await fetch(restaurantListFetchApiUrl);
